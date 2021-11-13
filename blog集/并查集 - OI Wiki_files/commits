@@ -1,0 +1,727 @@
+/**/foo({
+  "meta": {
+    "Content-Type": "application/javascript; charset=utf-8",
+    "X-RateLimit-Limit": "60",
+    "X-RateLimit-Remaining": "28",
+    "X-RateLimit-Reset": "1552657877",
+    "Cache-Control": "public, max-age=60, s-maxage=60",
+    "Vary": "Accept",
+    "ETag": "\"5e283ea31b134b0c5aebf1eaec0198de\"",
+    "Last-Modified": "Fri, 08 Feb 2019 13:27:48 GMT",
+    "X-GitHub-Media-Type": "unknown, github.v3",
+    "status": 200
+  },
+  "data": [
+    {
+      "sha": "5b8ca7a96175170dcffe889b34834d7e2fdb823e",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjViOGNhN2E5NjE3NTE3MGRjZmZlODg5YjM0ODM0ZDdlMmZkYjgyM2U=",
+      "commit": {
+        "author": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2019-02-08T13:27:48Z"
+        },
+        "committer": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2019-02-08T13:27:48Z"
+        },
+        "message": "style: format markdown files with remark-lint",
+        "tree": {
+          "sha": "f1732e1d04de99d639844179490a50421610dc2c",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/f1732e1d04de99d639844179490a50421610dc2c"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/5b8ca7a96175170dcffe889b34834d7e2fdb823e",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/5b8ca7a96175170dcffe889b34834d7e2fdb823e",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/5b8ca7a96175170dcffe889b34834d7e2fdb823e",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/5b8ca7a96175170dcffe889b34834d7e2fdb823e/comments",
+      "author": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "2720277ddc4e32bca1b4bb466867f0ad9ab6bc92",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/2720277ddc4e32bca1b4bb466867f0ad9ab6bc92",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/2720277ddc4e32bca1b4bb466867f0ad9ab6bc92"
+        }
+      ]
+    },
+    {
+      "sha": "1cf2032092560c1f8a20cdb485ee36163295ede1",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjFjZjIwMzIwOTI1NjBjMWY4YTIwY2RiNDg1ZWUzNjE2MzI5NWVkZTE=",
+      "commit": {
+        "author": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2019-01-15T11:35:47Z"
+        },
+        "committer": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2019-01-15T11:35:47Z"
+        },
+        "message": "style: format markdown files with remark-lint",
+        "tree": {
+          "sha": "9c5c0559fd34e4c85f922767375f45f1c05d106f",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/9c5c0559fd34e4c85f922767375f45f1c05d106f"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/1cf2032092560c1f8a20cdb485ee36163295ede1",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/1cf2032092560c1f8a20cdb485ee36163295ede1",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/1cf2032092560c1f8a20cdb485ee36163295ede1",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/1cf2032092560c1f8a20cdb485ee36163295ede1/comments",
+      "author": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "89c7feee62c53d30a5f1efdbc16db2324765ccb9",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/89c7feee62c53d30a5f1efdbc16db2324765ccb9",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/89c7feee62c53d30a5f1efdbc16db2324765ccb9"
+        }
+      ]
+    },
+    {
+      "sha": "bab4bf55ac7fb74a7377bdaf05d59fc80630a24c",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OmJhYjRiZjU1YWM3ZmI3NGE3Mzc3YmRhZjA1ZDU5ZmM4MDYzMGEyNGM=",
+      "commit": {
+        "author": {
+          "name": "Chro Ko",
+          "email": "chrogeek@outlook.com",
+          "date": "2018-11-27T06:34:08Z"
+        },
+        "committer": {
+          "name": "Chro Ko",
+          "email": "chrogeek@outlook.com",
+          "date": "2018-11-27T06:34:08Z"
+        },
+        "message": "Fixed text format\n\n* Changed heading into h2 (##).\n* Deleted heading numbers. (Heading number is generated automatically by mkdocs or latex compiler)\n* Deleted trailing colons. (Titles should not end in colons)\n* Added monofont style (`code` in markdown) for C++ keywords/function names in titles.",
+        "tree": {
+          "sha": "f534944156538a2608473998a6acf84e7379e122",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/f534944156538a2608473998a6acf84e7379e122"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/bab4bf55ac7fb74a7377bdaf05d59fc80630a24c",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/bab4bf55ac7fb74a7377bdaf05d59fc80630a24c",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/bab4bf55ac7fb74a7377bdaf05d59fc80630a24c",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/bab4bf55ac7fb74a7377bdaf05d59fc80630a24c/comments",
+      "author": {
+        "login": "Chrogeek",
+        "id": 15846491,
+        "node_id": "MDQ6VXNlcjE1ODQ2NDkx",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/15846491?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chrogeek",
+        "html_url": "https://github.com/Chrogeek",
+        "followers_url": "https://api.github.com/users/Chrogeek/followers",
+        "following_url": "https://api.github.com/users/Chrogeek/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chrogeek/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chrogeek/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chrogeek/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chrogeek/orgs",
+        "repos_url": "https://api.github.com/users/Chrogeek/repos",
+        "events_url": "https://api.github.com/users/Chrogeek/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chrogeek/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Chrogeek",
+        "id": 15846491,
+        "node_id": "MDQ6VXNlcjE1ODQ2NDkx",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/15846491?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Chrogeek",
+        "html_url": "https://github.com/Chrogeek",
+        "followers_url": "https://api.github.com/users/Chrogeek/followers",
+        "following_url": "https://api.github.com/users/Chrogeek/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Chrogeek/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Chrogeek/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Chrogeek/subscriptions",
+        "organizations_url": "https://api.github.com/users/Chrogeek/orgs",
+        "repos_url": "https://api.github.com/users/Chrogeek/repos",
+        "events_url": "https://api.github.com/users/Chrogeek/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Chrogeek/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "ffdb0ce7c59425f25a373ddc20d591953464fc9f",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/ffdb0ce7c59425f25a373ddc20d591953464fc9f",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/ffdb0ce7c59425f25a373ddc20d591953464fc9f"
+        }
+      ]
+    },
+    {
+      "sha": "05f6c067b2445b71fb9e2137f0dc68d6b4e7c721",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjA1ZjZjMDY3YjI0NDViNzFmYjllMjEzN2YwZGM2OGQ2YjRlN2M3MjE=",
+      "commit": {
+        "author": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2018-11-14T04:15:31Z"
+        },
+        "committer": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2018-11-14T04:15:31Z"
+        },
+        "message": "style: format markdown files with remark-lint",
+        "tree": {
+          "sha": "dc1e9b95bd75b2341d200d2ed4a9411daac04ec9",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/dc1e9b95bd75b2341d200d2ed4a9411daac04ec9"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/05f6c067b2445b71fb9e2137f0dc68d6b4e7c721",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/05f6c067b2445b71fb9e2137f0dc68d6b4e7c721",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/05f6c067b2445b71fb9e2137f0dc68d6b4e7c721",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/05f6c067b2445b71fb9e2137f0dc68d6b4e7c721/comments",
+      "author": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "ce1cf7ff66d9ed0728de611355d4af64299888a9",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/ce1cf7ff66d9ed0728de611355d4af64299888a9",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/ce1cf7ff66d9ed0728de611355d4af64299888a9"
+        }
+      ]
+    },
+    {
+      "sha": "5406132bec1f4e859d3df1a6b253e0225277d718",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjU0MDYxMzJiZWMxZjRlODU5ZDNkZjFhNmIyNTNlMDIyNTI3N2Q3MTg=",
+      "commit": {
+        "author": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2018-10-21T14:00:38Z"
+        },
+        "committer": {
+          "name": "24OI-bot",
+          "email": "15963390+24oi-bot@users.noreply.github.com",
+          "date": "2018-10-21T14:00:38Z"
+        },
+        "message": "style: format markdown files with remark-lint",
+        "tree": {
+          "sha": "ad1290c82ca1307da7dc01884c643a05d584537c",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/ad1290c82ca1307da7dc01884c643a05d584537c"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/5406132bec1f4e859d3df1a6b253e0225277d718",
+        "comment_count": 0,
+        "verification": {
+          "verified": false,
+          "reason": "unsigned",
+          "signature": null,
+          "payload": null
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/5406132bec1f4e859d3df1a6b253e0225277d718",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/5406132bec1f4e859d3df1a6b253e0225277d718",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/5406132bec1f4e859d3df1a6b253e0225277d718/comments",
+      "author": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "24OI-bot",
+        "id": 15963390,
+        "node_id": "MDQ6VXNlcjE1OTYzMzkw",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/15963390?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/24OI-bot",
+        "html_url": "https://github.com/24OI-bot",
+        "followers_url": "https://api.github.com/users/24OI-bot/followers",
+        "following_url": "https://api.github.com/users/24OI-bot/following{/other_user}",
+        "gists_url": "https://api.github.com/users/24OI-bot/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/24OI-bot/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/24OI-bot/subscriptions",
+        "organizations_url": "https://api.github.com/users/24OI-bot/orgs",
+        "repos_url": "https://api.github.com/users/24OI-bot/repos",
+        "events_url": "https://api.github.com/users/24OI-bot/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/24OI-bot/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "ef335374e9d0c3ec6fad72733067a01d8f8fb1ef",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/ef335374e9d0c3ec6fad72733067a01d8f8fb1ef",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/ef335374e9d0c3ec6fad72733067a01d8f8fb1ef"
+        }
+      ]
+    },
+    {
+      "sha": "7ff600464864177b7f2dd14e381259fd9df90138",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjdmZjYwMDQ2NDg2NDE3N2I3ZjJkZDE0ZTM4MTI1OWZkOWRmOTAxMzg=",
+      "commit": {
+        "author": {
+          "name": "Ir1d",
+          "email": "sirius.caffrey@gmail.com",
+          "date": "2018-09-08T03:27:19Z"
+        },
+        "committer": {
+          "name": "Ir1d",
+          "email": "sirius.caffrey@gmail.com",
+          "date": "2018-09-08T03:27:19Z"
+        },
+        "message": "style: update style with remark-lint",
+        "tree": {
+          "sha": "0512dfc0f55202a6378c56f090fa1af1f7977d09",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/0512dfc0f55202a6378c56f090fa1af1f7977d09"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/7ff600464864177b7f2dd14e381259fd9df90138",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEmfWA/bofu6F5q1L8YIhpOirmihsFAluTQZcACgkQYIhpOirm\nihuoQQ/7BdtwvI3L9PKBeypF2SV7P2f0LYKRz+IT5xn2KTxbkml9xtd452j0dXyQ\nRVlnCcHhiowyYhfVACUoiovxUak7nyfzt2phPJajSalpPaG9/n32gQ5p5eMvKC1W\nF+46mEE4W8ydetxNtMFFMKRBD+Y9Q6GNj73Ed3mNpSMySwQzdOz1eqJw7KQq2krJ\nYkNc/o3/6pfgxVGEK/h0mUC2EN3iEux5JT6foESnujK/FARcwr4nKC9TG6BIRzW5\nxndk9rnn6U57JA/s1ptFHmrLGm2mI6gBSPdHtlpgy7OWVCkk4eLn4PHEmV9WwKmI\nQCi/ze71jHCfJTfecxFmtNmT9VaBJDDrbW5tCAJCJpgFHssdzfzxRc62Iy3g3daa\nbBVFNSrYIXmyjb0kV5RExIpi3acmdd3vyQfD6L2F0vxm32cEtqd44DVs61eRt3Ix\nPRNPj8jalmduOWiMqZP5lQDi/CtfEyZhKpA5ORuKJbipJaNOGRVMQKbSqXpQC1ZX\nbxoxdqFHElrMeZUkoMHB+1WRmkXeH36EOqPYDEJOlDySqRlROZx+343Syj4nx4Ot\nFr3b1D4SsInaPOBZO76xxiZ4yy51huBqEcU6zkSMr0fiYhqe4Ms9ykAnyBczODdz\nOKXy5ocq0GmXuGQQvsFYu1Lr4lEeDnYTpUy2rJ7NyGcvERskRWA=\n=Cnjg\n-----END PGP SIGNATURE-----",
+          "payload": "tree 0512dfc0f55202a6378c56f090fa1af1f7977d09\nparent 061c85dc303d812fb53816c0385d1b61a81b403d\nauthor Ir1d <sirius.caffrey@gmail.com> 1536377239 +0800\ncommitter Ir1d <sirius.caffrey@gmail.com> 1536377239 +0800\n\nstyle: update style with remark-lint\n"
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/7ff600464864177b7f2dd14e381259fd9df90138",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/7ff600464864177b7f2dd14e381259fd9df90138",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/7ff600464864177b7f2dd14e381259fd9df90138/comments",
+      "author": {
+        "login": "Ir1d",
+        "id": 10709657,
+        "node_id": "MDQ6VXNlcjEwNzA5NjU3",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/10709657?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ir1d",
+        "html_url": "https://github.com/Ir1d",
+        "followers_url": "https://api.github.com/users/Ir1d/followers",
+        "following_url": "https://api.github.com/users/Ir1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ir1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ir1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ir1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ir1d/orgs",
+        "repos_url": "https://api.github.com/users/Ir1d/repos",
+        "events_url": "https://api.github.com/users/Ir1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ir1d/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Ir1d",
+        "id": 10709657,
+        "node_id": "MDQ6VXNlcjEwNzA5NjU3",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/10709657?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ir1d",
+        "html_url": "https://github.com/Ir1d",
+        "followers_url": "https://api.github.com/users/Ir1d/followers",
+        "following_url": "https://api.github.com/users/Ir1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ir1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ir1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ir1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ir1d/orgs",
+        "repos_url": "https://api.github.com/users/Ir1d/repos",
+        "events_url": "https://api.github.com/users/Ir1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ir1d/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "061c85dc303d812fb53816c0385d1b61a81b403d",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/061c85dc303d812fb53816c0385d1b61a81b403d",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/061c85dc303d812fb53816c0385d1b61a81b403d"
+        }
+      ]
+    },
+    {
+      "sha": "9b1d03869f331db225d743629ee8b803f51f679d",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjliMWQwMzg2OWYzMzFkYjIyNWQ3NDM2MjllZThiODAzZjUxZjY3OWQ=",
+      "commit": {
+        "author": {
+          "name": "stevebraveman",
+          "email": "42559612+stevebraveman@users.noreply.github.com",
+          "date": "2018-08-29T03:02:40Z"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "date": "2018-08-29T03:02:40Z"
+        },
+        "message": "Update dsu.md",
+        "tree": {
+          "sha": "25e6e0ff8a42b3b3c5498cd8f3182f13a01bf8c2",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/25e6e0ff8a42b3b3c5498cd8f3182f13a01bf8c2"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/9b1d03869f331db225d743629ee8b803f51f679d",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbhgzQCRBK7hj4Ov3rIwAAdHIIALFX9uBRtJERu9FJG5qSJeka\nMPJ5w3IAf/HzfFdhAsynrvLjrTVi2O7/pe6TxkcazL7JEZQKL7K4cevTYVBnLJFn\ni5z7uvggQ/m9JqYWLZltvGlPLwb6YUsDSTIr/Mqgcm30fr6oDw7aduIaHd1RFi3Z\nZCz+YiyDMJ1442OlOEh1Cvr1Bd1TMt3XtYcAh3F4JW8tirUHm/w/D4NX9ncUZPAW\nQ3Cb24z29geVXPdHXMkPAN6qYun8UnZJUGADCevG88lx/U1tf0IYGqgaW7GCjbIC\nHcs/0bfoQuyfY1mCZaQbl88KoRgwmuIpKrP8ufU8N76TzVVSg2q/QOnZ9wxKRSc=\n=ztKH\n-----END PGP SIGNATURE-----\n",
+          "payload": "tree 25e6e0ff8a42b3b3c5498cd8f3182f13a01bf8c2\nparent e20d077f7c17f2688c22f56f0aba295842479c4f\nauthor stevebraveman <42559612+stevebraveman@users.noreply.github.com> 1535511760 +0800\ncommitter GitHub <noreply@github.com> 1535511760 +0800\n\nUpdate dsu.md"
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/9b1d03869f331db225d743629ee8b803f51f679d",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/9b1d03869f331db225d743629ee8b803f51f679d",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/9b1d03869f331db225d743629ee8b803f51f679d/comments",
+      "author": {
+        "login": "stevebraveman",
+        "id": 42559612,
+        "node_id": "MDQ6VXNlcjQyNTU5NjEy",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/42559612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stevebraveman",
+        "html_url": "https://github.com/stevebraveman",
+        "followers_url": "https://api.github.com/users/stevebraveman/followers",
+        "following_url": "https://api.github.com/users/stevebraveman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stevebraveman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stevebraveman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stevebraveman/subscriptions",
+        "organizations_url": "https://api.github.com/users/stevebraveman/orgs",
+        "repos_url": "https://api.github.com/users/stevebraveman/repos",
+        "events_url": "https://api.github.com/users/stevebraveman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stevebraveman/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "e20d077f7c17f2688c22f56f0aba295842479c4f",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/e20d077f7c17f2688c22f56f0aba295842479c4f",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/e20d077f7c17f2688c22f56f0aba295842479c4f"
+        }
+      ]
+    },
+    {
+      "sha": "2366ab4ea5f35952862be9437dacc1e52d9e40aa",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OjIzNjZhYjRlYTVmMzU5NTI4NjJiZTk0MzdkYWNjMWU1MmQ5ZTQwYWE=",
+      "commit": {
+        "author": {
+          "name": "stevebraveman",
+          "email": "42559612+stevebraveman@users.noreply.github.com",
+          "date": "2018-08-29T02:08:00Z"
+        },
+        "committer": {
+          "name": "GitHub",
+          "email": "noreply@github.com",
+          "date": "2018-08-29T02:08:00Z"
+        },
+        "message": "Update dsu.md",
+        "tree": {
+          "sha": "0dda8d6ed0b850ce82a6f5abeef819a939dd558d",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/0dda8d6ed0b850ce82a6f5abeef819a939dd558d"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/2366ab4ea5f35952862be9437dacc1e52d9e40aa",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\nwsBcBAABCAAQBQJbhgAACRBK7hj4Ov3rIwAAdHIIAJ15JHy5g1D65KSadUU2v2YN\njtpqwBJsY9KNgnp7D57PaKBzoiaHYesVwOvAOTj3uoRZb56tWsszvqoGV3QZ1vhf\nbLAh1o1aYNzEYqLNV5+OoIZWquBgnNbiBaSFZccq/vDHuBZAs2/fZuRYaQ8VyeP/\nIPohKZ9GpaoJsOXKa/CoTYrH5XLvZ6wS/p+v9LBXgnVSOZs4SaF6zMFWo6CI7CQh\ndWyTZzxAmt1EAWMx5i3him35OU70f2KnRZiVnlE0ROZmRkyBa3TCd8pg/9yuT+Yd\n4k2ap2lPWK+7wrOoHinFP5NIO//fDDxbIMMMd+U2zkb7Sfm64rDo7nijguFmAgk=\n=phmH\n-----END PGP SIGNATURE-----\n",
+          "payload": "tree 0dda8d6ed0b850ce82a6f5abeef819a939dd558d\nparent b3d4a06cdc6e946ca56a2df8844b5147e407fabc\nauthor stevebraveman <42559612+stevebraveman@users.noreply.github.com> 1535508480 +0800\ncommitter GitHub <noreply@github.com> 1535508480 +0800\n\nUpdate dsu.md"
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/2366ab4ea5f35952862be9437dacc1e52d9e40aa",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/2366ab4ea5f35952862be9437dacc1e52d9e40aa",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/2366ab4ea5f35952862be9437dacc1e52d9e40aa/comments",
+      "author": {
+        "login": "stevebraveman",
+        "id": 42559612,
+        "node_id": "MDQ6VXNlcjQyNTU5NjEy",
+        "avatar_url": "https://avatars1.githubusercontent.com/u/42559612?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/stevebraveman",
+        "html_url": "https://github.com/stevebraveman",
+        "followers_url": "https://api.github.com/users/stevebraveman/followers",
+        "following_url": "https://api.github.com/users/stevebraveman/following{/other_user}",
+        "gists_url": "https://api.github.com/users/stevebraveman/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/stevebraveman/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/stevebraveman/subscriptions",
+        "organizations_url": "https://api.github.com/users/stevebraveman/orgs",
+        "repos_url": "https://api.github.com/users/stevebraveman/repos",
+        "events_url": "https://api.github.com/users/stevebraveman/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/stevebraveman/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "web-flow",
+        "id": 19864447,
+        "node_id": "MDQ6VXNlcjE5ODY0NDQ3",
+        "avatar_url": "https://avatars3.githubusercontent.com/u/19864447?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/web-flow",
+        "html_url": "https://github.com/web-flow",
+        "followers_url": "https://api.github.com/users/web-flow/followers",
+        "following_url": "https://api.github.com/users/web-flow/following{/other_user}",
+        "gists_url": "https://api.github.com/users/web-flow/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/web-flow/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/web-flow/subscriptions",
+        "organizations_url": "https://api.github.com/users/web-flow/orgs",
+        "repos_url": "https://api.github.com/users/web-flow/repos",
+        "events_url": "https://api.github.com/users/web-flow/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/web-flow/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "b3d4a06cdc6e946ca56a2df8844b5147e407fabc",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/b3d4a06cdc6e946ca56a2df8844b5147e407fabc",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/b3d4a06cdc6e946ca56a2df8844b5147e407fabc"
+        }
+      ]
+    },
+    {
+      "sha": "c03f0923d0742e11c8200a451d50a8ae519fe3cf",
+      "node_id": "MDY6Q29tbWl0MTQwNTE2NzM2OmMwM2YwOTIzZDA3NDJlMTFjODIwMGE0NTFkNTBhOGFlNTE5ZmUzY2Y=",
+      "commit": {
+        "author": {
+          "name": "Ir1d",
+          "email": "sirius.caffrey@gmail.com",
+          "date": "2018-08-26T15:10:57Z"
+        },
+        "committer": {
+          "name": "Ir1d",
+          "email": "sirius.caffrey@gmail.com",
+          "date": "2018-08-26T15:10:57Z"
+        },
+        "message": "fix: make links shorter and fix broken links",
+        "tree": {
+          "sha": "6409bca114024ce5708713568c320360341b79f6",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/git/trees/6409bca114024ce5708713568c320360341b79f6"
+        },
+        "url": "https://api.github.com/repos/24OI/OI-wiki/git/commits/c03f0923d0742e11c8200a451d50a8ae519fe3cf",
+        "comment_count": 0,
+        "verification": {
+          "verified": true,
+          "reason": "valid",
+          "signature": "-----BEGIN PGP SIGNATURE-----\n\niQIzBAABCgAdFiEEmfWA/bofu6F5q1L8YIhpOirmihsFAluCwwEACgkQYIhpOirm\nihtWbg//Xje+9SvxAf07LVldW+bhhn6YO2LJ718yfQtYjfzFko5SLxVHDnIuZWnV\nmoV3antJnqPUUiiIfluYDjIPp4gdFeYG7PXFXAYkLqAvo8bjVXY7S5yr+hj5Aa+c\nawdLotN5SiEQbCyYJzoFEy71lc/0oXtRZfLXHMXVlm66RqebpkqSXBoWmLKbqIwG\nQhWIyjPvu+isqM+bCCyFYmVPXh2tyS8RrPBhMhmspL9Cxq7CmEB/Wc7mkRtflmEx\nNBIeGjZ3BIYNLHR+6ectzt4C7irX/gyZh4jAXb+hiWPwEGdGqDuq62WNBbwn9ShX\nHM2fAOQG2Ht7ajJk/MfPRPaL6gc2iBqBWyKfYiAv4LCtrk9Y4VJ2Q3GjazyOooiv\nu2sXL1292StXJUfTGXr+Wss1Jt+1ZER2Rt4qZvT3w8SHAyod5N/rb2wc74wPQz7e\nOwjVIEPWOm2xOqYe96n9TR8voO/P306Buao+iv2Ewjy+oU34GUyhPqzDnzNzX5YG\noTwTy43HV/gjlSNC0b5xtxCVrZiWWgUjUe8oEJWUE7D1km4V1kwFH9gJM2x8xfmQ\n5+RGgCBFOn/vqoW4+SPerOVM0Em3eVbCN3Mh+gX8u47LsOcc2bCl8CXQWnGJexgD\nGREPe1uimhHwaH3+FZkQx60U2lAPcTWB+fwaqar6cvncFPYx09I=\n=pD6e\n-----END PGP SIGNATURE-----",
+          "payload": "tree 6409bca114024ce5708713568c320360341b79f6\nparent 01d2ea19e3dd933bdc9662454b8f6f671e14decd\nauthor Ir1d <sirius.caffrey@gmail.com> 1535296257 +0800\ncommitter Ir1d <sirius.caffrey@gmail.com> 1535296257 +0800\n\nfix: make links shorter and fix broken links\n"
+        }
+      },
+      "url": "https://api.github.com/repos/24OI/OI-wiki/commits/c03f0923d0742e11c8200a451d50a8ae519fe3cf",
+      "html_url": "https://github.com/24OI/OI-wiki/commit/c03f0923d0742e11c8200a451d50a8ae519fe3cf",
+      "comments_url": "https://api.github.com/repos/24OI/OI-wiki/commits/c03f0923d0742e11c8200a451d50a8ae519fe3cf/comments",
+      "author": {
+        "login": "Ir1d",
+        "id": 10709657,
+        "node_id": "MDQ6VXNlcjEwNzA5NjU3",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/10709657?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ir1d",
+        "html_url": "https://github.com/Ir1d",
+        "followers_url": "https://api.github.com/users/Ir1d/followers",
+        "following_url": "https://api.github.com/users/Ir1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ir1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ir1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ir1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ir1d/orgs",
+        "repos_url": "https://api.github.com/users/Ir1d/repos",
+        "events_url": "https://api.github.com/users/Ir1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ir1d/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "committer": {
+        "login": "Ir1d",
+        "id": 10709657,
+        "node_id": "MDQ6VXNlcjEwNzA5NjU3",
+        "avatar_url": "https://avatars0.githubusercontent.com/u/10709657?v=4",
+        "gravatar_id": "",
+        "url": "https://api.github.com/users/Ir1d",
+        "html_url": "https://github.com/Ir1d",
+        "followers_url": "https://api.github.com/users/Ir1d/followers",
+        "following_url": "https://api.github.com/users/Ir1d/following{/other_user}",
+        "gists_url": "https://api.github.com/users/Ir1d/gists{/gist_id}",
+        "starred_url": "https://api.github.com/users/Ir1d/starred{/owner}{/repo}",
+        "subscriptions_url": "https://api.github.com/users/Ir1d/subscriptions",
+        "organizations_url": "https://api.github.com/users/Ir1d/orgs",
+        "repos_url": "https://api.github.com/users/Ir1d/repos",
+        "events_url": "https://api.github.com/users/Ir1d/events{/privacy}",
+        "received_events_url": "https://api.github.com/users/Ir1d/received_events",
+        "type": "User",
+        "site_admin": false
+      },
+      "parents": [
+        {
+          "sha": "01d2ea19e3dd933bdc9662454b8f6f671e14decd",
+          "url": "https://api.github.com/repos/24OI/OI-wiki/commits/01d2ea19e3dd933bdc9662454b8f6f671e14decd",
+          "html_url": "https://github.com/24OI/OI-wiki/commit/01d2ea19e3dd933bdc9662454b8f6f671e14decd"
+        }
+      ]
+    }
+  ]
+})

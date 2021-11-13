@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html class="js cssanimations"><head lang="en">
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no">
+<meta name="renderer" content="webkit">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<meta name="blog-uid" content="44156">
+<meta name="blog-name" content="Chanis">
+<meta name="current-user" content="116903">
+<link rel="stylesheet" href="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/common.css">
+<link rel="stylesheet" href="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/article.css">
+<title>比STL还STL？——平板电视 - Chanis - 洛谷博客</title>
+<style>
+    body {
+      background: url(https://www.gaoguang.com/uploads/allimg/180724/2-1PH41PJ8.jpg) fixed center;
+      background-size: cover;
+    }
+  </style><script charset="utf-8" src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/29.js"></script></head>
+
+<body>
+<header class="am-topbar am-topbar-inverse">
+<div class="blog-g-fixed am-g">
+<h1 class="am-topbar-brand">
+<a href="https://www.luogu.org/blog/Chanis/">Chanis</a></h1>
+<button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}">
+<span class="am-sr-only">导航切换</span>
+<span class="am-icon-bars"></span>
+</button>
+<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+<ul class="am-nav am-nav-pills am-topbar-nav">
+<li>
+<a href="https://www.luogu.org/blog/Chanis/">首页</a></li>
+<li>
+<a href="https://www.luogu.org/blog/Chanis/">文章</a></li>
+</ul>
+<div id="search"><form role="search" class="am-topbar-form am-topbar-left am-form-inline am-topbar-right"><div class="am-form-group"><input placeholder="搜索文章" class="am-form-field am-input-sm" type="text"></div> <button class="am-btn am-btn-default am-btn-sm">搜索</button></form></div>
+</div>
+</div>
+</header>
+<div class="am-g am-g-fixed blog-g-fixed" id="bodymain">
+<div class="am-u-md-4 blog-sidebar" style="float:right">
+<div class="am-panel-group">
+<section class=" lg-summary am-panel">
+<img class="am-circle am-center" src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/44156.png" height="80" width="80">
+<h1 class="ui header">Chanis</h1>
+<p>훈❤백</p>
+</section>
+</div>
+</div>
+<div class="am-u-md-8" style="float:right">
+<div id="blog-container" data-blogid="55962" data-vote="0" data-thumbup="34">
+<article class="lg-article am-g">
+<h3 class="am-article-title blog-title">
+<a :href="post.Identifier">比STL还STL？——平板电视</a>
+</h3>
+<b> posted on 2018-08-07 14:08:04 | under <a href="https://www.luogu.org/blog/Chanis/#type=%E6%9C%AA%E5%88%86%E7%B1%BB">未分类</a>
+|
+</b>
+<span id="article-vote" class="am-comment-actions"><a href="#"><i class="am-icon-thumbs-up"></i></a> 34
+	<a href="#"><i class="am-icon-thumbs-down"></i></a> <a href="#"><i class="am-icon-reply"></i></a></span>
+<hr>
+<div id="article-content">
+<h1>__gnu_pbds食用教程</h1>
+<h3>●QQ826755370</h3>
+<h2>引入</h2>
+<p>某P党：“你们C++的STL库真<del>恶心</del>强大，好多数据结构和算法都不用手打。”</p>
+<p>C党1：“STL能省下的代码量又不多，平衡树多难调啊。”</p>
+<p>C党2：“欸？__gnu_pbds库就可以做到啊，它封装了hash,tree,trie,priority_queue这四种数据结构。”</p>
+<h2>正文</h2>
+<h3>介绍</h3>
+<p>什么是__gnu_pbds?Policy based data structures！简称<del>平板电视</del>pbds。在使用pbds前，你需要：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/tree_policy.hpp&gt;//用tree</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/hash_policy.hpp&gt;//用hash</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/trie_policy.hpp&gt;//用trie</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/priority_queue.hpp&gt;//用priority_queue</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds;</code></pre>
+<p>woc，真<del>jb</del>烦，有没有什么简单的方法？当然有：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/extc++.h&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds;
+<span class="hljs-comment">//bits/extc++.h与bits/stdc++.h类似，bits/extc++.h是所有拓展库，bits/stdc++.h是所有标准库</span></code></pre>
+<p>但是在dev c++里如果这样写，会提示少一个文件，出各种莫名奇妙的锅，其它的IDE请自行尝试，我的linux是deepin的，装了NOI Linux的dalao帮忙测一下。</p>
+<h3>hash</h3>
+<p>该引用的头文件和命名空间都讲过了，直接进入正题。</p>
+<p>hash_table的用法与map类似，它是这么定义的：</p>
+<pre><code class="language-cpp hljs">cc_hash_table&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">bool</span>&gt; h;
+gp_hash_table&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">bool</span>&gt; h;</code></pre>
+<p>其中cc开头为拉链法，gp开头为探测法，个人实测探测法稍微快一些。</p>
+<p>啥？操作？其实就和map差不多，支持[ ]和find。</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/hash_policy.hpp&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds;
+gp_hash_table&lt;<span class="hljs-built_in">string</span>,<span class="hljs-keyword">int</span>&gt; h;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">judge</span><span class="hljs-params">(<span class="hljs-built_in">string</span> s)</span>
+</span>{
+    <span class="hljs-keyword">if</span>(h.find(s)!=h.end())
+        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"orz %%%"</span>;
+    <span class="hljs-keyword">else</span>
+        <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"tan90"</span>;
+    <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    h[<span class="hljs-string">"Ican'tAKIOI"</span>]=<span class="hljs-number">1</span>;
+    h.insert(make_pair(<span class="hljs-string">"UAKIOI"</span>,<span class="hljs-number">1</span>));
+    <span class="hljs-built_in">string</span> str;
+    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;str)
+        judge(str);
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<p><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/27115.png" alt="运行图"></p>
+<p>等一等？和map一样，那不如直接用map了。不不不，map的总时间复杂度是 <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mi>l</mi><mi>o</mi><mi>g</mi><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(nlogn)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base"><span style="margin-right: 0.02778em;" class="mord mathit">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span style="margin-right: 0.01968em;" class="mord mathit">l</span><span class="mord mathit">o</span><span style="margin-right: 0.03588em;" class="mord mathit">g</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span> 的，而hash_table的总时间复杂度仅为 <span><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>O</mi><mo>(</mo><mi>n</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">O(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height: 0.75em;"></span><span class="strut bottom" style="height: 1em; vertical-align: -0.25em;"></span><span class="base"><span style="margin-right: 0.02778em;" class="mord mathit">O</span><span class="mopen">(</span><span class="mord mathit">n</span><span class="mclose">)</span></span></span></span></span> ！所以我们可以用这个特性来做<a href="https://www.luogu.org/problemnew/show/P1333">洛谷P1333 瑞瑞的木棍</a>。前置知识：<a href="https://www.luogu.org/blog/41785/jian-yi-bing-zha-ji">并查集</a> <a href="https://www.luogu.org/blog/lzhbigbird/zong-qi-qiao-wen-ti-dao-ou-la-lu">欧拉路</a>。</p>
+<p>感谢<a href="https://www.luogu.org/space/show?uid=7035">Great_Influence</a>的代码：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/hash_policy.hpp&gt;//pb_ds库</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cctype&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> For(i,a,b) for(i=(a);i&lt;=(b);++i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Forward(i,a,b) for(i=(a);i&gt;=(b);--i)</span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds;<span class="hljs-comment">//命名空间</span>
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">(T &amp;x)</span></span>{
+    T s=<span class="hljs-number">0</span>,f=<span class="hljs-number">1</span>;<span class="hljs-keyword">char</span> k=getchar();
+    <span class="hljs-keyword">while</span>(!<span class="hljs-built_in">isdigit</span>(k)&amp;&amp;k^<span class="hljs-string">'-'</span>)k=getchar();
+    <span class="hljs-keyword">if</span>(!<span class="hljs-built_in">isdigit</span>(k)){f=<span class="hljs-number">-1</span>;k=getchar();}
+    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">isdigit</span>(k)){s=s*<span class="hljs-number">10</span>+(k^<span class="hljs-number">48</span>);k=getchar();}
+    x=s*f;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">file</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>{
+    <span class="hljs-meta">#<span class="hljs-meta-keyword">ifndef</span> ONLINE_JUDGE</span>
+    freopen(<span class="hljs-string">"P1333.in"</span>,<span class="hljs-string">"r"</span>,<span class="hljs-built_in">stdin</span>);
+    freopen(<span class="hljs-string">"P1333.out"</span>,<span class="hljs-string">"w"</span>,<span class="hljs-built_in">stdout</span>);
+    <span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+}
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> MAXN=<span class="hljs-number">250050</span>;
+<span class="hljs-keyword">char</span> l[<span class="hljs-number">15</span>],r[<span class="hljs-number">15</span>];
+<span class="hljs-keyword">int</span> e,f[MAXN];
+<span class="hljs-keyword">bool</span> in[MAXN];
+gp_hash_table&lt;<span class="hljs-built_in">string</span>,<span class="hljs-keyword">int</span>&gt;G;<span class="hljs-comment">//hash_table定义</span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">find</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span>
+</span>{
+    <span class="hljs-keyword">int</span> t=f[x],d;<span class="hljs-keyword">while</span>(t!=f[t])t=f[t];
+    <span class="hljs-keyword">while</span>(f[x]!=t){d=f[x];f[x]=t;x=d;}
+    <span class="hljs-keyword">return</span> t;
+}
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">work</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">scanf</span>(<span class="hljs-string">"%s%s"</span>,l,r)!=EOF)
+    {
+        <span class="hljs-keyword">if</span>(!G[l])G[l]=++e,f[e]=e;
+        <span class="hljs-keyword">if</span>(!G[r])G[r]=++e,f[e]=e;
+        <span class="hljs-keyword">if</span>(e&gt;<span class="hljs-number">250010</span>)<span class="hljs-comment">//如果点数超过n+1的话，一定不存在通路，直接返回。</span>
+        {
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Impossible\n"</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+        in[G[l]]^=<span class="hljs-number">1</span>;<span class="hljs-comment">//修改奇偶情况</span>
+        in[G[r]]^=<span class="hljs-number">1</span>;
+        f[find(G[l])]=find(G[r]);<span class="hljs-comment">//合并并查集</span>
+    }
+    <span class="hljs-keyword">int</span> flag=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">int</span> i;
+    For(i,<span class="hljs-number">1</span>,e)<span class="hljs-keyword">if</span>(in[i])<span class="hljs-comment">//判断奇点个数是否超过2</span>
+    {
+        <span class="hljs-keyword">if</span>(flag==<span class="hljs-number">2</span>)
+        {
+            <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Impossible\n"</span>);
+            <span class="hljs-keyword">return</span>;
+        }
+        <span class="hljs-keyword">else</span> ++flag;
+    }
+    <span class="hljs-keyword">int</span> father=find(<span class="hljs-number">1</span>);
+    For(i,<span class="hljs-number">2</span>,e)<span class="hljs-keyword">if</span>(find(i)^father)<span class="hljs-comment">//判断是否连通</span>
+    {
+        <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Impossible\n"</span>);
+        <span class="hljs-keyword">return</span>;
+    }
+    <span class="hljs-built_in">printf</span>(<span class="hljs-string">"Possible\n"</span>);
+}
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span></span>{
+    file();
+    work();
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h3>tree</h3>
+<p>pbds里面的tree都是平衡树，其中有rb_tree,splay_tree,ov_tree（后两种都容易超时，所以请不要用它们）。需要的头文件与命名空间也讲了，下面我们来看它的食用方法：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> pii pair<span class="hljs-meta-string">&lt;int,int&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> mp(x,y) make_pair(x,y) </span>
+tree&lt;pii,null_type,less&lt;pii&gt;,rb_tree_tag,tree_order_statistics_node_update&gt; tr;
+pii <span class="hljs-comment">//存储的类型</span>
+null_type <span class="hljs-comment">//无映射(低版本g++为null_mapped_type)</span>
+less&lt;pii&gt; <span class="hljs-comment">//从小到大排序</span>
+rb_tree_tag <span class="hljs-comment">//红黑树</span>
+tree_order_statistics_node_update <span class="hljs-comment">//更新方式 </span>
+tr.insert(mp(x,y)); <span class="hljs-comment">//插入;</span>
+tr.erase(mp(x,y)); <span class="hljs-comment">//删除;</span>
+tr.order_of_key(pii(x,y)); <span class="hljs-comment">//求排名 </span>
+tr.find_by_order(x); <span class="hljs-comment">//找k小值，返回迭代器 </span>
+tr.join(b); <span class="hljs-comment">//将b并入tr，前提是两棵树类型一样且没有重复元素 </span>
+tr.split(v,b); <span class="hljs-comment">//分裂，key小于等于v的元素属于tr，其余的属于b</span>
+tr.lower_bound(x); <span class="hljs-comment">//返回第一个大于等于x的元素的迭代器</span>
+tr.upper_bound(x); <span class="hljs-comment">//返回第一个大于x的元素的迭代器</span>
+<span class="hljs-comment">//以上所有操作的时间复杂度均为O(logn) </span></code></pre>
+<p>下面我们来试一试<a href="https://www.luogu.org/problemnew/show/P3369">洛谷P3369 普通平衡树</a>（感谢<a href="https://www.cnblogs.com/shenben/p/6243846.html">shenben的代码</a>）：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-comment">//by shenben</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;cstdio&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/tree_policy.hpp&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds;
+<span class="hljs-keyword">typedef</span> <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ll;
+tree&lt;ll,null_type,less&lt;ll&gt;,rb_tree_tag,tree_order_statistics_node_update&gt; bbt;
+<span class="hljs-keyword">int</span> n;ll k,ans;
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">int</span> <span class="hljs-title">read</span><span class="hljs-params">()</span></span>{
+    <span class="hljs-keyword">int</span> x=<span class="hljs-number">0</span>,f=<span class="hljs-number">1</span>;<span class="hljs-keyword">char</span> ch=getchar();
+    <span class="hljs-keyword">while</span>(ch&lt;<span class="hljs-string">'0'</span>||ch&gt;<span class="hljs-string">'9'</span>){<span class="hljs-keyword">if</span>(ch==<span class="hljs-string">'-'</span>)f=<span class="hljs-number">-1</span>;ch=getchar();}
+    <span class="hljs-keyword">while</span>(ch&gt;=<span class="hljs-string">'0'</span>&amp;&amp;ch&lt;=<span class="hljs-string">'9'</span>){x=x*<span class="hljs-number">10</span>+ch-<span class="hljs-string">'0'</span>;ch=getchar();}
+    <span class="hljs-keyword">return</span> x*f;
+} 
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span>{
+    n=read();
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>,opt;i&lt;=n;i++){
+        opt=read();k=read();
+        <span class="hljs-keyword">if</span>(opt==<span class="hljs-number">1</span>) bbt.insert((k&lt;&lt;<span class="hljs-number">20</span>)+i);
+        <span class="hljs-keyword">if</span>(opt==<span class="hljs-number">2</span>) bbt.erase(bbt.lower_bound(k&lt;&lt;<span class="hljs-number">20</span>));
+        <span class="hljs-keyword">if</span>(opt==<span class="hljs-number">3</span>) <span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d\n"</span>,bbt.order_of_key(k&lt;&lt;<span class="hljs-number">20</span>)+<span class="hljs-number">1</span>);
+        <span class="hljs-keyword">if</span>(opt==<span class="hljs-number">4</span>) ans=*bbt.find_by_order(k<span class="hljs-number">-1</span>),<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>,ans&gt;&gt;<span class="hljs-number">20</span>);
+        <span class="hljs-keyword">if</span>(opt==<span class="hljs-number">5</span>) ans=*--bbt.lower_bound(k&lt;&lt;<span class="hljs-number">20</span>),<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>,ans&gt;&gt;<span class="hljs-number">20</span>);
+        <span class="hljs-keyword">if</span>(opt==<span class="hljs-number">6</span>) ans=*bbt.upper_bound((k&lt;&lt;<span class="hljs-number">20</span>)+n),<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%lld\n"</span>,ans&gt;&gt;<span class="hljs-number">20</span>);
+    }
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h2>前方高能！前方高能！前方高能！</h2>
+<p>在看这里之前，你需要熟练地掌握c++的特性。如果看不懂我也没有办法，你可以跳过这一部分。</p>
+<p>你以为pbds种的tree只能实现这些功能？不不不，你可以自定义它，我们需要写一个自己的node_update，它是长这样的：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node_CItr</span>,<span class="hljs-title">class</span> <span class="hljs-title">Node_Itr</span>,<span class="hljs-title">class</span> <span class="hljs-title">Cmp_Fn</span>,<span class="hljs-title">class</span> _<span class="hljs-title">Alloc</span>&gt;
+<span class="hljs-title">struct</span> <span class="hljs-title">my_node_update</span>
+{</span>
+    <span class="hljs-keyword">typedef</span> my_type metadata_type;
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">operator</span><span class="hljs-params">()</span><span class="hljs-params">(Node_Itr it, Node_CItr end_it)</span>
+    </span>{
+        ...
+    }
+};</code></pre>
+<p>我们先解释一下这个类是如何工作的。节点更新的tree都会保存一个my_type类型的变量。当我们修改这棵树的时候，会从叶子节点开始修改，并且每次都会调用operator()，我们来看一下这个函数的两个参数：</p>
+<p>Node_Itr it为调用该函数的元素的迭代器，Node_CItr end_it可以const到叶子节点的迭代器，Node_Itr有以下的操作：</p>
+<p>1.get_l_child()，返回其左孩子的迭代器，没有则返回node_end；</p>
+<p>2.get_r_child()，同get_l_child()；</p>
+<p>3.get_metadata()，返回其在树中维护的数据；</p>
+<p>4.**it可以获取it的信息。</p>
+<p>为了详细讲解，我们举一个更新子树大小的例子：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">operator</span><span class="hljs-params">()</span><span class="hljs-params">(Node_Itr it, Node_CItr end_it)</span>
+</span>{
+    Node_Itr l=it.get_l_child();
+    Node_Itr r=it.get_r_child();
+    <span class="hljs-keyword">int</span> left=<span class="hljs-number">0</span>,right=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">if</span>(l!=end_it) left=l.get_metadata();
+    <span class="hljs-keyword">if</span>(r!=end_it) right=r.get_metadata();
+    <span class="hljs-keyword">const_cast</span>&lt;<span class="hljs-keyword">int</span>&amp;&gt;(it.get_metadata())=left+right+<span class="hljs-number">1</span>;
+}</code></pre>
+<p>现在我们学会了更新，那么我们该如何自己写操作呢？node_update所有public方法都会在树中公开。如果我们在node_update中将它们声明为virtual，则可以访问基类中的所有virtual。所以，我们在类里添加以下内容：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-keyword">virtual</span> Node_CItr <span class="hljs-title">node_begin</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span></span>=<span class="hljs-number">0</span>;
+<span class="hljs-function"><span class="hljs-keyword">virtual</span> Node_CItr <span class="hljs-title">node_end</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span></span>=<span class="hljs-number">0</span>;</code></pre>
+<p>这样我们就能直接访问树了，还有，node_begin指向树根，node_end指向最后一个叶子节点的后一个地址，下面这个就是查排名的操作：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">myrank</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span>
+</span>{
+    <span class="hljs-keyword">int</span> ans=<span class="hljs-number">0</span>;
+    Node_CItr it=node_begin();
+    <span class="hljs-keyword">while</span>(it!=node_end())
+    {
+        Node_CItr l=it.get_l_child();
+        Node_CItr r=it.get_r_child();
+        <span class="hljs-keyword">if</span>(Cmp_Fn()(x,**it))
+            it=l;
+        <span class="hljs-keyword">else</span>
+        {
+            ans++;
+            <span class="hljs-keyword">if</span>(l!=node_end()) ans+=l.get_metadata();
+            it=r;
+        }
+    }
+    <span class="hljs-keyword">return</span> ans;
+}</code></pre>
+<p>下面我们来看<a href="https://www.luogu.org/problemnew/show/CF459D">CF459D</a>：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/tree_policy.hpp&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds;
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Node_CItr</span>,<span class="hljs-title">class</span> <span class="hljs-title">Node_Itr</span>,<span class="hljs-title">class</span> <span class="hljs-title">Cmp_Fn</span>,<span class="hljs-title">class</span> _<span class="hljs-title">Alloc</span>&gt;
+<span class="hljs-title">struct</span> <span class="hljs-title">my_node_update</span>
+{</span>
+    <span class="hljs-keyword">typedef</span> <span class="hljs-keyword">int</span> metadata_type;
+    <span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">order_of_key</span><span class="hljs-params">(pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt; x)</span>
+    </span>{
+        <span class="hljs-keyword">int</span> ans=<span class="hljs-number">0</span>;
+        Node_CItr it=node_begin();
+        <span class="hljs-keyword">while</span>(it!=node_end())
+        {
+            Node_CItr l=it.get_l_child();
+            Node_CItr r=it.get_r_child();
+            <span class="hljs-keyword">if</span>(Cmp_Fn()(x,**it))
+                it=l;
+            <span class="hljs-keyword">else</span>
+            {
+                ans++;
+                <span class="hljs-keyword">if</span>(l!=node_end()) ans+=l.get_metadata();
+                it=r;
+            }
+        }
+        <span class="hljs-keyword">return</span> ans;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">operator</span><span class="hljs-params">()</span><span class="hljs-params">(Node_Itr it, Node_CItr end_it)</span>
+    </span>{
+        Node_Itr l=it.get_l_child();
+        Node_Itr r=it.get_r_child();
+        <span class="hljs-keyword">int</span> left=<span class="hljs-number">0</span>,right=<span class="hljs-number">0</span>;
+        <span class="hljs-keyword">if</span>(l!=end_it) left =l.get_metadata();
+        <span class="hljs-keyword">if</span>(r!=end_it) right=r.get_metadata();
+        <span class="hljs-keyword">const_cast</span>&lt;<span class="hljs-keyword">int</span>&amp;&gt;(it.get_metadata())=left+right+<span class="hljs-number">1</span>;
+    }
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> Node_CItr <span class="hljs-title">node_begin</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;
+    <span class="hljs-function"><span class="hljs-keyword">virtual</span> Node_CItr <span class="hljs-title">node_end</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>= <span class="hljs-number">0</span>;
+};
+tree&lt;pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt;,null_type,less&lt;pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt; &gt;,rb_tree_tag,my_node_update&gt; me;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    <span class="hljs-built_in">map</span>&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt; cnt[<span class="hljs-number">2</span>];
+    <span class="hljs-keyword">int</span> n;
+    <span class="hljs-built_in">cin</span>&gt;&gt;n;
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; a(n);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)
+        <span class="hljs-built_in">cin</span>&gt;&gt;a[i];
+    <span class="hljs-built_in">vector</span>&lt;<span class="hljs-keyword">int</span>&gt; pre(n),suf(n);
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">0</span>;i&lt;n;i++)
+    {
+        pre[i]=cnt[<span class="hljs-number">0</span>][a[i]]++;
+        suf[n-i<span class="hljs-number">-1</span>]=cnt[<span class="hljs-number">1</span>][a[n-i<span class="hljs-number">-1</span>]]++;
+    }
+    <span class="hljs-keyword">long</span> <span class="hljs-keyword">long</span> ans=<span class="hljs-number">0</span>;
+    <span class="hljs-keyword">for</span>(<span class="hljs-keyword">int</span> i=<span class="hljs-number">1</span>;i&lt;n;i++)
+    {
+        me.insert({pre[i<span class="hljs-number">-1</span>],i<span class="hljs-number">-1</span>});
+        ans+=i-me.order_of_key({suf[i],i});
+    }
+    <span class="hljs-built_in">cout</span>&lt;&lt;ans&lt;&lt;<span class="hljs-built_in">endl</span>;
+}</code></pre>
+<h3>trie</h3>
+<p>trie即为字典树，我们先看如何定义一个trie与它的操作：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-keyword">typedef</span> trie&lt;<span class="hljs-built_in">string</span>,null_type,trie_string_access_traits&lt;&gt;,pat_trie_tag,trie_prefix_search_node_update&gt; tr;
+<span class="hljs-comment">//第一个参数必须为字符串类型，tag也有别的tag，但pat最快，与tree相同，node_update支持自定义</span>
+tr.insert(s); <span class="hljs-comment">//插入s </span>
+tr.erase(s); <span class="hljs-comment">//删除s </span>
+tr.join(b); <span class="hljs-comment">//将b并入tr </span>
+pair<span class="hljs-comment">//pair的使用如下：</span>
+pair&lt;tr::iterator,tr::iterator&gt; range=base.prefix_range(x);
+<span class="hljs-keyword">for</span>(tr::iterator it=range.first;it!=range.second;it++)
+    <span class="hljs-built_in">cout</span>&lt;&lt;*it&lt;&lt;<span class="hljs-string">' '</span>&lt;&lt;<span class="hljs-built_in">endl</span>;
+<span class="hljs-comment">//pair中第一个是起始迭代器，第二个是终止迭代器，遍历过去就可以找到所有字符串了。 </span></code></pre>
+<p>现在我们来看<a href="http://acm.timus.ru/problem.aspx?space=1&amp;num=1414">Astronomical Database</a>：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/assoc_container.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/trie_policy.hpp&gt;</span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> __gnu_pbds; 
+<span class="hljs-keyword">typedef</span> trie&lt;<span class="hljs-built_in">string</span>,null_type,trie_string_access_traits&lt;&gt;,pat_trie_tag,trie_prefix_search_node_update&gt;pref_trie;
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    pref_trie base;
+    base.insert(<span class="hljs-string">"sun"</span>);
+    <span class="hljs-built_in">string</span> x;
+    <span class="hljs-keyword">while</span>(<span class="hljs-built_in">cin</span>&gt;&gt;x)
+    {
+        <span class="hljs-keyword">if</span>(x[<span class="hljs-number">0</span>]==<span class="hljs-string">'?'</span>)
+        {
+            <span class="hljs-built_in">cout</span>&lt;&lt;x.substr(<span class="hljs-number">1</span>)&lt;&lt;<span class="hljs-built_in">endl</span>;
+            <span class="hljs-keyword">auto</span> range=base.prefix_range(x.substr(<span class="hljs-number">1</span>));
+            <span class="hljs-keyword">int</span> t=<span class="hljs-number">0</span>;
+            <span class="hljs-keyword">for</span>(<span class="hljs-keyword">auto</span> it=range.first;t&lt;<span class="hljs-number">20</span> &amp;&amp; it!=range.second;it++,t++)
+                <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-string">"  "</span>&lt;&lt;*it&lt;&lt;<span class="hljs-built_in">endl</span>;
+        }
+        <span class="hljs-keyword">else</span>
+            base.insert(x.substr(<span class="hljs-number">1</span>));
+    }
+}</code></pre>
+<h3>priority_queue</h3>
+<p>priority_queue为优先队列，用堆实现，priority_queue的定义与操作：</p>
+<pre><code class="language-cpp hljs">priority_queue&lt;<span class="hljs-keyword">int</span>,greater&lt;<span class="hljs-keyword">int</span>&gt;,TAG&gt; Q;<span class="hljs-comment">//小根堆，大根堆写less&lt;int&gt;</span>
+<span class="hljs-comment">/*其中的TAG为类型，有以下几种：
+pairing_heap_tag
+thin_heap_tag
+binomial_heap_tag
+rc_binomial_heap_tag 
+binary_heap_tag
+其中pairing_help_tag最快*/</span>
+Q.push(x);
+Q.pop();
+Q.top();
+Q.join(b);
+Q.empty();
+Q.size(); 
+Q.modify(it,<span class="hljs-number">6</span>);
+Q.erase(it);
+<span class="hljs-comment">//以上操作我都不讲了，pbds里的优先队列还可以用迭代器遍历</span></code></pre>
+<p>时间复杂度：</p>
+<p><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/27149.png" alt="时间复杂度"></p>
+<p><a href="https://www.luogu.org/problemnew/show/P4779">堆优化dijkstra</a>（感谢<a href="https://www.luogu.org/space/show?uid=7035">Great_Influence</a>的代码）：</p>
+<pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;bits/stdc++.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;ext/pb_ds/priority_queue.hpp&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Rep(i,a,b) for(register int i=(a),i##end=(b);i&lt;=i##end;++i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Repe(i,a,b) for(register int i=(a),i##end=(b);i&gt;=i##end;--i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> For(i,a,b) for(i=(a),i&lt;=(b);++i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Forward(i,a,b) for(i=(a),i&gt;=(b);--i)</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">define</span> Chkmax(a,b) a=a&gt;b?a:b</span>
+<span class="hljs-keyword">template</span>&lt;<span class="hljs-keyword">typename</span> T&gt;<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">read</span><span class="hljs-params">(T &amp;x)</span>
+</span>{
+    T f=<span class="hljs-number">1</span>;x=<span class="hljs-number">0</span>;<span class="hljs-keyword">char</span> c;
+    <span class="hljs-keyword">for</span>(c=getchar();!<span class="hljs-built_in">isdigit</span>(c);c=getchar())<span class="hljs-keyword">if</span>(c==<span class="hljs-string">'-'</span>)f=<span class="hljs-number">-1</span>;
+    <span class="hljs-keyword">for</span>(;<span class="hljs-built_in">isdigit</span>(c);c=getchar())x=x*<span class="hljs-number">10</span>+(c^<span class="hljs-number">48</span>);
+    x*=f;
+}
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">write</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x)</span>
+</span>{
+    <span class="hljs-keyword">if</span>(!x){<span class="hljs-built_in">putchar</span>(<span class="hljs-number">48</span>);<span class="hljs-built_in">putchar</span>(<span class="hljs-string">'\n'</span>);<span class="hljs-keyword">return</span>;}
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> sta[<span class="hljs-number">45</span>],tp;
+    <span class="hljs-keyword">for</span>(tp=<span class="hljs-number">0</span>;x;x/=<span class="hljs-number">10</span>)sta[++tp]=x%<span class="hljs-number">10</span>;
+    <span class="hljs-keyword">for</span>(;tp;<span class="hljs-built_in">putchar</span>(sta[tp--]^<span class="hljs-number">48</span>));
+    <span class="hljs-built_in">putchar</span>(<span class="hljs-string">'\n'</span>);
+}
+
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>;
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">file</span><span class="hljs-params">()</span>
+</span>{
+<span class="hljs-meta">#<span class="hljs-meta-keyword">ifndef</span> ONLINE_JUDGE</span>
+    freopen(<span class="hljs-string">"water.in"</span>,<span class="hljs-string">"r"</span>,<span class="hljs-built_in">stdin</span>);
+    freopen(<span class="hljs-string">"water.out"</span>,<span class="hljs-string">"w"</span>,<span class="hljs-built_in">stdout</span>);
+<span class="hljs-meta">#<span class="hljs-meta-keyword">endif</span></span>
+}
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> MAXN=<span class="hljs-number">1e5</span>+<span class="hljs-number">7</span>,MAXM=<span class="hljs-number">4e5</span>+<span class="hljs-number">7</span>;
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> n,m;
+
+<span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">edg</span>
+{</span>
+    <span class="hljs-keyword">int</span> u,v,w,h;
+    <span class="hljs-keyword">friend</span> <span class="hljs-keyword">bool</span> <span class="hljs-keyword">operator</span>&lt;(edg a,edg b){<span class="hljs-keyword">return</span> a.h&gt;b.h;}
+}EDG[MAXM];
+
+<span class="hljs-keyword">static</span> <span class="hljs-class"><span class="hljs-keyword">struct</span> <span class="hljs-title">edge</span>
+{</span>
+    <span class="hljs-keyword">int</span> v,w,nxt;
+}P[MAXM&lt;&lt;<span class="hljs-number">1</span>];
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> head[MAXN],e;
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> u,<span class="hljs-keyword">int</span> v,<span class="hljs-keyword">int</span> w)</span>
+</span>{P[++e]=(edge){v,w,head[u]};head[u]=e;}
+
+__gnu_pbds::priority_queue&lt;pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt;,greater&lt;pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt; &gt; &gt;G;
+
+__gnu_pbds::priority_queue&lt;pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt;,greater&lt;pair&lt;<span class="hljs-keyword">int</span>,<span class="hljs-keyword">int</span>&gt; &gt; &gt;::point_iterator its[MAXN];
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> dis[MAXN];
+
+<span class="hljs-keyword">const</span> <span class="hljs-keyword">int</span> INF=<span class="hljs-number">2e9</span>+<span class="hljs-number">7</span>;
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">dijkst</span><span class="hljs-params">(<span class="hljs-keyword">int</span> s)</span>
+</span>{
+    G.clear();
+    its[s]=G.push(make_pair(<span class="hljs-number">0</span>,s));dis[s]=<span class="hljs-number">0</span>;
+    Rep(i,<span class="hljs-number">2</span>,n)dis[i]=INF,its[i]=G.push(make_pair(INF,i));
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> u;
+    <span class="hljs-keyword">while</span>(!G.empty())
+    {
+        u=G.top().second;G.pop();
+        <span class="hljs-keyword">for</span>(<span class="hljs-keyword">register</span> <span class="hljs-keyword">int</span> v=head[u];v;v=P[v].nxt)
+            <span class="hljs-keyword">if</span>(dis[P[v].v]&gt;dis[u]+P[v].w)
+            {
+                dis[P[v].v]=dis[u]+P[v].w;
+                G.modify(its[P[v].v],make_pair(dis[u]+P[v].w,P[v].v));
+            }
+    }
+}
+
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> s;
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">init</span><span class="hljs-params">()</span>
+</span>{
+    read(n);read(m);read(s);
+    <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> u,v,w;
+    Rep(i,<span class="hljs-number">1</span>,m)read(u),read(v),read(w),add(u,v,w);
+}
+
+<span class="hljs-function"><span class="hljs-keyword">inline</span> <span class="hljs-keyword">void</span> <span class="hljs-title">solve</span><span class="hljs-params">()</span>
+</span>{
+    dijkst(s);
+    Rep(i,<span class="hljs-number">1</span>,n)<span class="hljs-built_in">printf</span>(<span class="hljs-string">"%d "</span>,dis[i]);
+    <span class="hljs-built_in">puts</span>(<span class="hljs-string">""</span>);
+
+}
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span>
+</span>{
+    file();
+    init();
+    solve();
+    <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+}</code></pre>
+<h3>关于rope</h3>
+<p>sorry，rope属于__gnu_cxx，不属于__gnu_pbds。下次讲ext中其他的内容时，我会讲rope。</p>
+<h3>最后</h3>
+<h2>NOIP中可以使用pbds!</h2>
+<h2>完结撒花！<em>★,°</em>:.☆(￣▽￣)/$:<em>.°★</em> 。</h2>
+<br>
+</div>
+</article>
+<div id="article-comments" class="ui comments"><div><div class="lg-article"><h2>
+        有什么感想？
+      </h2> <div class="am-form-group am-form"><textarea rows="3" name="benbencontent"></textarea></div> <button class="am-btn am-btn-danger am-btn-sm">
+        　发射评论！　
+      </button></div></div> <ul class="am-comments-list am-comments-list-flip lg-article"><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=41868" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/41868.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=41868" target="_blank" class="author">
+              哔哩哔哩
+            </a>
+            2018-08-08 14:14:27
+          </div></header> <div class="am-comment-bd">
+          NOIP的pbds名称空间好像是不允许的吧&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=44156" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/44156.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=44156" target="_blank" class="author">
+              Chanis
+            </a>
+            2018-08-10 20:35:44
+          </div></header> <div class="am-comment-bd">
+          允许，我试过&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=40241" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/40241.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=40241" target="_blank" class="author">
+              dblark
+            </a>
+            2018-08-18 09:06:26
+          </div></header> <div class="am-comment-bd">
+          突然想起Pascal的不能用的STL&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=46747" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/46747.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=46747" target="_blank" class="author">
+              Aehnuwx
+            </a>
+            2018-08-31 15:29:29
+          </div></header> <div class="am-comment-bd">
+          前排！！！！！！！！！！！！！！！&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=46747" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/46747.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=46747" target="_blank" class="author">
+              Aehnuwx
+            </a>
+            2018-08-31 15:29:43
+          </div></header> <div class="am-comment-bd">
+          前排！！！！！！！！！！！！！！！ &nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=88319" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/88319.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=88319" target="_blank" class="author">
+              CYY_Gestalt
+            </a>
+            2018-08-31 15:35:26
+          </div></header> <div class="am-comment-bd">
+          前排滋磁大佬orz&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=125139" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/125139.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=125139" target="_blank" class="author">
+              nosta
+            </a>
+            2018-08-31 15:38:03
+          </div></header> <div class="am-comment-bd">
+          前排资瓷!&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=90364" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/90364.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=90364" target="_blank" class="author">
+              _GTBA_
+            </a>
+            2018-08-31 15:39:14
+          </div></header> <div class="am-comment-bd">
+          前排兜售望远镜&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=90364" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/90364.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=90364" target="_blank" class="author">
+              _GTBA_
+            </a>
+            2018-08-31 15:39:54
+          </div></header> <div class="am-comment-bd">
+          为博主的背景打call！&nbsp;
+        </div></div></li><li class="am-comment am-comment-primary"><div class="lg-left"><a href="https://www.luogu.org/space/show?uid=73687" target="_blank" class="avatar"><img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/73687.png" class="am-comment-avatar"></a></div> <div class="am-comment-main"><header class="am-comment-hd"><div class="am-comment-meta"><a href="https://www.luogu.org/space/show?uid=73687" target="_blank" class="author">
+              He_Ren
+            </a>
+            2018-08-31 15:40:42
+          </div></header> <div class="am-comment-bd">
+          前排！！！&nbsp;
+        </div></div></li></ul> <div class="ui three column centered grid" style="margin: 30px; text-align: center;"><hr class="am-article-divider blog-hr"> <ul class="am-pagination blog-pagination"><!----> <li class="am-pagination-next"><a>下一页 »</a></li></ul></div></div>
+</div>
+<link rel="stylesheet" href="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/katex.css">
+</div>
+</div>
+<div class="lg-footer">
+<div class="lg-footer-top"></div>
+<div class="blog-g-fixed am-g">
+<div class="am-u-md-3 am-hide-sm">
+<img src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/logo_white_3.png" class="lg-inline-up" width="175">
+</div>
+<div class="am-u-md-4 am-hide-sm">
+<h2 style="color: #999;margin: 0">在洛谷，<br>享受Coding的欢乐</h2>
+</div>
+<div class="am-u-md-5 am-md-text-right">2013-2019 , <a href="https://www.luogu.org/">洛谷</a> © Developed by the
+<a href="https://github.com/luogu-dev" target="_blank">Luogu Dev Team</a>. <a href="https://www.luogu.org/blog/Chanis/_sitemap">Site Map</a>
+<br>Blog theme 'Luogu3' By @kkksc03
+</div>
+</div>
+</div>
+<script>
+var BlogGlobals = {
+  blogName: document.querySelector('meta[name=blog-name]').getAttribute('content'),
+  blogUID: parseInt(document.querySelector('meta[name=blog-uid]').getAttribute('content')),
+  currentUser: parseInt(document.querySelector('meta[name=current-user]').getAttribute('content')),
+  luoguAddress: 'https://www.luogu.org',
+  picAddress: 'https://cdn.luogu.org'
+}
+</script>
+<script src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/common.js"></script>
+<script>
+var blogContainer = document.getElementById('blog-container')
+BlogGlobals.blogID = parseInt(blogContainer.getAttribute('data-blogid'))
+BlogGlobals.vote = parseInt(blogContainer.getAttribute('data-vote'))
+BlogGlobals.thumbUp = parseInt(blogContainer.getAttribute('data-thumbUp'))
+</script>
+<script src="%E6%AF%94STL%E8%BF%98STL%EF%BC%9F%E2%80%94%E2%80%94%E5%B9%B3%E6%9D%BF%E7%94%B5%E8%A7%86%20-%20Chanis%20-%20%E6%B4%9B%E8%B0%B7%E5%8D%9A%E5%AE%A2_files/article.js"></script>
+
+
+</body></html>

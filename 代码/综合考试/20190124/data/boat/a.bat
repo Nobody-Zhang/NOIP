@@ -1,0 +1,10 @@
+boat<boat1.in>boat1.ans
+boat<boat2.in>boat2.ans
+boat<boat3.in>boat3.ans
+boat<boat4.in>boat4.ans
+boat<boat5.in>boat5.ans
+boat<boat6.in>boat6.ans
+boat<boat7.in>boat7.ans
+boat<boat8.in>boat8.ans
+boat<boat9.in>boat9.ans
+boat<boat10.in>boat10.ans

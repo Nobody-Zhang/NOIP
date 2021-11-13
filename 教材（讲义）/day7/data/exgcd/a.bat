@@ -1,0 +1,10 @@
+exgcd<exgcd1.in>exgcd1.ans
+exgcd<exgcd2.in>exgcd2.ans
+exgcd<exgcd3.in>exgcd3.ans
+exgcd<exgcd4.in>exgcd4.ans
+exgcd<exgcd5.in>exgcd5.ans
+exgcd<exgcd6.in>exgcd6.ans
+exgcd<exgcd7.in>exgcd7.ans
+exgcd<exgcd8.in>exgcd8.ans
+exgcd<exgcd9.in>exgcd9.ans
+exgcd<exgcd10.in>exgcd10.ans

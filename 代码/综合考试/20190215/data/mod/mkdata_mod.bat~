@@ -1,0 +1,4 @@
+for /l %%i in (4,1,10) do (
+	DATA_mod > mod%%i.in
+	mod < mod%%i.in > mod%%i.out
+)
